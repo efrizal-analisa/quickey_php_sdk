@@ -11,6 +11,6 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4" : { "SDK\": "src\sdk.php"}
+        "psr-4" : { "QUICKEY\\SDK\\": "src\"}
     }
 }

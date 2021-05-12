@@ -4,7 +4,7 @@ A Login Management System for Application
 
 # Requirements
 cURL
-PHP 5.4+
+PHP 8.0+
 
 # Installation
 

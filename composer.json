@@ -12,5 +12,9 @@
     "minimum-stability": "main",
     "autoload": {
         "psr-4" : { "SDK\\": "src/" }
+    },
+    "require": {
+        "mashape/unirest-php": "^3.0",
+        "php": ">=8.0.5"
     }
 }

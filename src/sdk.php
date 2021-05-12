@@ -1,5 +1,5 @@
 <?php
-namespace SDK;
+namespace QUICKEY\SDK;
 require_once dirname(__FILE__).'\vendor\mashape\unirest-php\src\Unirest.php';
 
 class Quickey

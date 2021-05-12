@@ -9,16 +9,7 @@ PHP 5.4+
 # Installation
 
 ## Using Composer
-To install unirest-php with Composer, just add the following to your composer.json file:
-
-```
-{
-    "require-dev": {
-        "quickey/quickey-php-sdk": "1.*"
-    }
-}
-```
-or by running the following command:
+To install quickey-php-sdk with Composer, just running the following command:
 
 ```
 composer require quickey/quickey-php-sdk

@@ -1,0 +1,22 @@
+{
+    "name": "quickey/quickey-php-sdk",
+    "description": "A Login Management System for Application",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "quickey team",
+            "email": "efrizal@analisa.io"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4" : { "SDK": "src/"}
+    },
+    "require": {
+        "mashape/unirest-php": "^3.0"
+    },
+    "require-dev": {
+        "mashape/unirest-php": "^3.0"
+    }
+}

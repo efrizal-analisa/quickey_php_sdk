@@ -9,7 +9,7 @@
             "email": "efrizal@analisa.io"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "main",
     "autoload": {
         "psr-4" : { "SDK\\": "src/" }
     }

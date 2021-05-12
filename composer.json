@@ -11,6 +11,6 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4" : { "QUICKEY\SDK\": "src\"}
+        "psr-4" : { "QUICKEY\SDK": "src\"}
     }
 }

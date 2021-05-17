@@ -1,5 +1,5 @@
 <?php
-namespace QUICKEY\SDK;
+namespace SDK;
 require_once dirname(__FILE__).'\vendor\mashape\unirest-php\src\Unirest.php';
 
 class Quickey
@@ -11,7 +11,7 @@ class Quickey
         $headers = array('Accept' => 'application/json');
         $data = array('apiKey' => $apiKey);
         $body = Unirest\Request\Body::form($data);
-        $response = Unirest\Request::post(QuickeySDK::$BASE_URL . '/auth/apiKey', $headers, $body);
+        $response = Unirest\Request::post(Quickey::$BASE_URL . '/auth/apiKey', $headers, $body);
         return $response->body;    
     }
 
@@ -20,7 +20,7 @@ class Quickey
         $headers = array('Accept' => 'application/json');
         $data = array('email' => $userEmail);
         $body = Unirest\Request\Body::form($data);
-        $response = Unirest\Request::post(QuickeySDK::$BASE_URL . '/loginRegister', $headers, $body);
+        $response = Unirest\Request::post(Quickey::$BASE_URL . '/loginRegister', $headers, $body);
         return $response->body;
     }   
 }

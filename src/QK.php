@@ -6,7 +6,7 @@ class Quickey
 {
     public static string $BASE_URL = "https://api.getquickey.com";
 
-    public function app(string $apiKey): object
+    public static function app(string $apiKey): object
     {
         $headers = array('Accept' => 'application/json');
         $data = array('apiKey' => $apiKey);
@@ -15,7 +15,7 @@ class Quickey
         return $response->body;    
     }
 
-    public function auth(string $userEmail): object
+    public static function auth(string $userEmail): object
     {
         $headers = array('Accept' => 'application/json');
         $data = array('email' => $userEmail);

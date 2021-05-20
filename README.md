@@ -3,8 +3,8 @@
 A Login Management System for Application
 
 # Requirements
-cURL
-PHP 8.0+
+- cURL
+- PHP 7.4+
 
 # Installation
 
@@ -17,15 +17,14 @@ composer require quickey/quickey-php-sdk
 
 # Usage
 ```
-use SDK/QuickeySDK;
+$vendorDir = 'path/to';
+require_once $vendorDir.'/vendor/quickey/quickey-php-sdk/src/QK.php';
 ```
 ## Get App Data
  ```
-$sdk = new QuickeySDK();
-$app = $sdk->app(' YOUR API KEY ')
+$app = \QK\SDK\Quickey::app(' YOUR API KEY ');
 ```
 ## Get Access Token
 ```
-$sdk = new QuickeySDK();
-$auth = $sdk->auth(' YOUR USER EMAIL ')
+$auth = \QK\SDK\Quickey::auth(' YOUR EMAIL ');
 ```

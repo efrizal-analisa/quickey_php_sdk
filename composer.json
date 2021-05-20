@@ -11,10 +11,10 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4" : { "SDK\\QK\\": "src/" }
+        "psr-4" : { "QK\\SDK\\": "src/" }
     },
     "require": {
         "mashape/unirest-php": "^3.0",
-        "php": ">=8.0.5"
+        "php": ">=7.4.16"
     }
 }

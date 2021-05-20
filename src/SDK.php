@@ -1,5 +1,5 @@
 <?php
-namespace SDK\QK;
+namespace QK\SDK;
 use \Unirest;
 
 class Quickey

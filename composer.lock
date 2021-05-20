@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "807ea7649968341164e59103bcfc7d85",
+    "content-hash": "5b063d98d4b5be91c055ec006852d378",
     "packages": [
         {
             "name": "mashape/unirest-php",
-            "version": "dev-master",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Kong/unirest-php.git",
-                "reference": "14aa9aa6919e4b70c59cd20722ac113c0ffeb45b"
+                "url": "https://github.com/Mashape/unirest-php.git",
+                "reference": "842c0f242dfaaf85f16b72e217bf7f7c19ab12cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kong/unirest-php/zipball/14aa9aa6919e4b70c59cd20722ac113c0ffeb45b",
-                "reference": "14aa9aa6919e4b70c59cd20722ac113c0ffeb45b",
+                "url": "https://api.github.com/repos/Mashape/unirest-php/zipball/842c0f242dfaaf85f16b72e217bf7f7c19ab12cb",
+                "reference": "842c0f242dfaaf85f16b72e217bf7f7c19ab12cb",
                 "shasum": ""
             },
             "require": {
@@ -31,7 +31,6 @@
             "suggest": {
                 "ext-json": "Allows using JSON Bodies for sending and parsing requests"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -53,21 +52,21 @@
             ],
             "support": {
                 "email": "opensource@mashape.com",
-                "issues": "https://github.com/Kong/unirest-php/issues",
-                "source": "https://github.com/Kong/unirest-php/tree/master"
+                "issues": "https://github.com/Mashape/unirest-php/issues",
+                "source": "https://github.com/Mashape/unirest-php/tree/master"
             },
-            "time": "2017-02-24T17:06:01+00:00"
+            "time": "2016-08-11T17:49:21+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "mashape/unirest-php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.4.16"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
 }

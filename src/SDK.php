@@ -1,26 +1,16 @@
 <?php
-namespace QK\SDK;
+require_once './App.php';
+require_once './Auth.php';
 use \Unirest;
 
 class Quickey
 {
-    public static string $BASE_URL = "https://api.getquickey.com";
-
-    public static function app(string $apiKey): object
-    {
-        $headers = array('Accept' => 'application/json');
-        $data = array('apiKey' => $apiKey);
-        $body = Unirest\Request\Body::form($data);
-        $response = Unirest\Request::post(Quickey::$BASE_URL . '/auth/apiKey', $headers, $body);
-        return $response->body;    
+    public $app;
+    public $auth;
+  
+    function __construct($apiKey) {
+      $this->app = new App($apiKey);
+      $this->auth = new Auth($apiKey);
     }
+};
 
-    public static function auth(string $userEmail): object
-    {
-        $headers = array('Accept' => 'application/json');
-        $data = array('email' => $userEmail);
-        $body = Unirest\Request\Body::form($data);
-        $response = Unirest\Request::post(Quickey::$BASE_URL . '/loginRegister', $headers, $body);
-        return $response->body;
-    }   
-}

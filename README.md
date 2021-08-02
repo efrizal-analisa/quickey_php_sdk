@@ -19,12 +19,26 @@ composer require quickey/quickey-php-sdk
 ```
 $vendorDir = 'path/to';
 require_once $vendorDir.'/vendor/quickey/quickey-php-sdk/src/QK.php';
+
+$quickey = new Quickey('YOUR API KEY');
 ```
 ## Get App Data
  ```
-$app = \QK\SDK\Quickey::app(' YOUR API KEY ');
+$app = quickey->app->getMetaData();
 ```
-## Get Access Token
+## Get Access Token By Email
 ```
-$auth = \QK\SDK\Quickey::auth(' YOUR EMAIL ');
+$token = quickey->auth->getAccessTokenByEmail('YOUR EMAIL', 'YOUR PROVIDER');
+```
+## Get Access Token By Phone
+```
+$token = quickey->auth->getAccessTokenByPhone('YOUR Phone', 'YOUR PROVIDER');
+```
+## Send SMS OTP To Phone
+```
+$response = quickey->app->sendSMSOTP('YOUR PHONE', 'YOUR PROVIDER');
+```
+## Link Phone To Email
+```
+$response = quickey->auth->linkPhoneToEmail('YOUR PHONE', 'YOUR PROVIDER');
 ```

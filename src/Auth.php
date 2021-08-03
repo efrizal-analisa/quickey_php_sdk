@@ -20,10 +20,10 @@ class Auth
         return $response->body;
     }    
 
-    public function getAccessTokenByPhone(string $phone, string $provider): object
+    public function getAccessTokenByPhone(string $phone, string $provider, string $otpCode): object
     {
         $headers = array('Accept' => 'application/json', 'Authorization' => $this->apiKey);
-        $data = array('phone' => $phone, 'provider' => $provider);
+        $data = array('phone' => $phone, 'provider' => $provider, 'otpCode' => $otpCode);
         $body = Unirest\Request\Body::form($data);
         $response = Unirest\Request::post(Config::$BASE_URL . '/loginCustomer', $headers, $body);
         return $response->body;
